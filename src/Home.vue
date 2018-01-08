@@ -1,5 +1,7 @@
 <template>
-    <app-server-status></app-server-status>
+    <div>
+        <app-server-status v-for='server in 5' :key="server"></app-server-status>
+    </div>
 </template>
 
 <script>
@@ -7,7 +9,7 @@
 
     export default {
         components: {
-            AppServerStatus,
+            //AppServerStatus,
             'app-server-status': ServerStatus
         }
     }
